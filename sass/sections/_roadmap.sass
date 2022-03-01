@@ -1,0 +1,200 @@
+.roadmap
+  position: relative
+  margin-top: 100px
+
+.roadmap__wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.roadmap__title
+  margin-bottom: 10px
+  color: #00114E
+  text-transform: uppercase
+
+.roadmap__subtitle
+  margin-bottom: 60px
+  text-align: center
+  color: #00114E
+  font-size: 24px
+  line-height: 36px
+
+.roadmap__boxes
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.roadmap__box
+  display: flex
+  justify-content: start
+  align-items: start
+  flex-direction: column
+  width: 25%
+  &:nth-child(even)
+    margin-left: auto
+
+.rbox__title
+  margin-bottom: 25px
+  font-family: 'Mont-bold'
+  font-size: 48px
+  color: #0e48a5
+
+.rbox__text
+  padding-left: 30px
+  margin-bottom: 15px
+  position: relative
+  font-family: 'Mont'
+  color: #00114e
+  font-size: 24px
+  &:last-child
+    margin-bottom: 0px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 20px
+    height: 20px
+    border: 1px solid #1059CC
+    border-radius: 5px
+
+.rbox__text--finished
+  &::before
+    background-color: #1059CC
+
+.roadmap__img
+  position: absolute
+  width: 560px
+  left: 50%
+  top: 54%
+  transform: translate(-50%, -50%)
+
+.roadmap__slider
+  display: none
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1250px )
+  .roadmap__img
+    width: 460px
+
+  .rbox__title
+    font-size: 36px
+
+  .rbox__text
+    font-size: 18px
+
+@media screen and ( max-width: 1000px )
+  .roadmap__img
+    width: 420px
+
+  .rbox__title
+    font-size: 30px
+
+  .rbox__text
+    font-size: 16px
+
+@media screen and ( max-width: 900px )
+  .roadmap__img
+    width: 360px
+    top: 54%
+
+  .rbox__title
+    font-size: 21px
+
+  .rbox__text
+    font-size: 14px
+
+@media screen and ( max-width: 760px )
+  .roadmap__subtitle
+    font-size: 16px
+    line-height: 20px
+
+@media screen and ( max-width: 700px )
+  .roadmap
+    height: auto
+
+  .roadmap__boxes
+    display: none
+
+  .roadmap__img
+    display: none
+
+  .roadmap__slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+  .roadmap__slide
+    padding: 0px 30px !important
+    padding-bottom: 10px !important
+    display: flex !important
+    justify-content: space-between
+    align-items: center
+
+  .rslide__title
+    margin-bottom: 20px
+    font-size: 24px
+    color: #0e48a5
+
+  .rslide__text
+    padding-left: 30px
+    margin-bottom: 15px
+    position: relative
+    font-size: 13px
+    color: #00114e
+    &:last-child
+      margin-bottom: 0px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 20px
+      height: 20px
+      border: 1px solid #1059CC
+      border-radius: 5px
+
+  .rslide__text--finished
+    &::before
+      background-color: #1059CC
+
+  .rslide__img
+    width: 200px
+
+@media screen and ( max-width: 560px )
+  .rslide__title
+    font-size: 20px
+
+  .rslide__text
+    margin-bottom: 10px
+
+  .rslide__img
+    width: 100px
+
+@media screen and ( max-width: 500px )
+  .roadmap__slide
+    flex-direction: column-reverse
+    align-items: start
+
+  .rslide__img
+    width: 180px
+    margin: 0 auto
+
+  .rslide__left
+    flex-basis: 100%
+
+  .rslide__right
+    width: 100%
+    margin-bottom: 10px
+
+  .roadmap__slider__button
+    position: absolute
+    top: 20%
+    z-index: 10
+
+  .roadmap__slider__button-next
+    right: 0

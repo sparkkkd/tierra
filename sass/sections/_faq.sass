@@ -1,0 +1,140 @@
+.faq
+  margin-top: 100px
+
+.faq__wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.faq__title
+  margin-bottom: 15px
+  text-align: center
+
+.faq__subtitle
+  margin-bottom: 50px
+  font-size: 24px
+  text-align: center
+  color: #00114E
+
+.faq__main
+  display: flex
+  justify-content: space-between
+  align-items: start
+  width: 100%
+
+.faq__box
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  flex-basis: 50%
+
+.faq__tab
+  margin-bottom: 20px
+  padding: 20px
+  display: flex
+  flex-direction: column
+  border: 1px solid #0e59cb
+  background-color: #9cddff
+  border-radius: 10px
+  height: auto
+  transform: all .3s
+  transition: all .7s
+  &:last-child
+    margin-bottom: 0px
+
+.faq__tab--active
+  background-color: #0e59cb
+  .faq__tab__question
+    color: #fff
+    .arrow-path
+      fill: #fff
+
+.faq__tab__question
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  color: #0e59cb
+  font-size: 24px
+  transition: color .3s
+
+.faq__tab__question-btn
+  transition: transform .3s
+  cursor: pointer
+  
+.arrow-path
+  transition: all .5s  
+
+.faq__tab__answer
+  max-height: 0
+  overflow: hidden
+  width: 100%
+  color: #bae2ff
+  font-size: 24px
+  line-height: 36px
+  transition: all .5s
+
+.faq__tab__answer--active
+	max-height: 200px
+
+.faq__tab__question-btn--active
+  transform: rotateZ(90deg)
+
+@media screen and ( max-width: 1200px )
+  .faq__img
+    img
+      width: 420px
+
+@media screen and ( max-width: 980px )
+  .faq__main
+    justify-content: space-between
+    align-items: center
+
+  .faq__img
+    img
+      width: 350px
+
+  .faq__tab__question
+    font-size: 19px
+
+  .faq__tab__answer
+    font-size: 19px
+    line-height: 25px
+
+  .faq__tab__question-btn
+    svg
+      width: 15px
+
+@media screen and ( max-width: 810px )
+  .faq__img
+    img
+      width: 300px
+
+@media screen and ( max-width: 770px )
+  .faq__subtitle
+    font-size: 20px
+
+  .faq__main
+    justify-content: center
+
+  .faq__box
+    flex-basis: 100%
+
+  .faq__tab
+    width: 100%
+
+  .faq__img
+    display: none
+
+@media screen and ( max-width: 370px )
+  .faq__subtitle 
+    font-size: 17px
+
+  .faq__tab__question 
+    font-size: 17px
+
+  .faq__tab__answer 
+    font-size: 17px
+    line-height: 23px

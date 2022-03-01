@@ -1,0 +1,126 @@
+.team
+  margin-top: 100px
+
+.team__wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.team__title
+  margin-bottom: 15px
+  text-transform: uppercase
+  color: #00114e
+
+.team__subtitle
+  margin-bottom: 60px
+  width: 70%
+  text-align: center
+  font-size: 24px
+  line-height: 36px
+  color: #00114E
+
+.team__boxes
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  
+.team__box
+  margin-bottom: 40px
+  display: flex
+  justify-content: center
+  flex-direction: column
+    
+.team__img
+  margin-bottom: 20px
+  border-radius: 20px
+
+.team__name
+  margin-bottom: 10px
+  font-size: 24px
+  color: #0e48a5
+
+.team__prof
+  color: #00114e
+  font-size: 18px
+
+.team__slider
+  display: none
+  
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1260px )
+  .team__box
+    width: 301px
+
+@media screen and ( max-width: 1000px )
+  .team__box
+    width: 266px
+
+  .team__prof
+    font-size: 16px
+  
+@media screen and ( max-width: 900px )
+  .team__subtitle
+    font-size: 16px
+    line-height: 25px 
+
+  .team__box
+    width: 206px
+    min-height: 293px
+    justify-content: start
+
+@media screen and ( max-width: 655px )
+  .team__box
+    width: 170px
+
+@media screen and ( max-width: 560px )
+  .team__subtitle
+    width: 90%
+    font-size: 16px
+    line-height: 25px 
+
+@media screen and ( max-width: 545px )
+  .team__box
+    width: 140px
+    min-height: 216px
+
+  .team__name
+    font-size: 18px
+
+  .team__prof
+    font-size: 14px  
+  
+@media screen and ( max-width: 475px )
+  .team__boxes
+    display: none
+
+  .team__slider
+    display: flex
+
+  .team__slide
+    display: flex !important
+    justify-content: center 
+    align-items: center
+    flex-direction: column
+
+  .ts__image
+    margin-bottom: 15px
+    width: 200px
+    border-radius: 20px
+
+  .ts__name
+    margin-bottom: 5px
+    font-size: 14px
+    color: #0e48a5
+
+  .ts__prof
+    font-size: 12px
+    line-height: 18px
+    color: #00114e
+
+@media screen and ( max-width: 435px )
+  .team__subtitle
+    margin-bottom: 40px
+    font-size: 14px
+    line-height: 19px 

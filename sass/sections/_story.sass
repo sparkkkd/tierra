@@ -1,0 +1,150 @@
+.story__wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.story__subtitle
+  margin-bottom: 50px
+  text-align: center
+  color: #00114e
+  font-size: 24px
+  line-height: 36px
+
+.story__boxes
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: start
+  flex-wrap: wrap
+
+.story__box
+  padding: 25px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  flex-basis: 24%
+  background: #265adc
+  box-shadow: 0px 4px 10px rgba(38, 90, 220, 0.6)
+  border-radius: 15.8239px
+
+.story__box--blocked
+  position: relative
+  .sb__chapter
+    color: #0E48a5
+    z-index: 2
+  .sb__title
+    color: #0E48a5
+    z-index: 2
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #000
+    border-radius: 15px
+    opacity: .6
+
+.sb__img__box
+  margin-bottom: 30px
+  padding: 20px 30px
+  min-height: 227px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #0E48a5
+  border-radius: 23px
+
+.sb__chapter
+  margin-bottom: 7px
+  font-size: 18px
+  color: #bae2ff
+
+.sb__title
+  font-size: 36px
+  line-height: 47px
+  color: #bae2ff
+  text-align: center
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1185px )
+  .sb__title
+    font-size: 30px
+    line-height: 34px
+
+  .chapter1-img
+    width: 100px !important
+
+  .sb__img__box
+    min-height: 152px
+    img
+      width: 80px
+
+@media screen and ( max-width: 1026px )
+  .sb__chapter
+    font-size: 14px
+
+  .sb__title
+    font-size: 26px
+    line-height: 30px
+
+@media screen and ( max-width: 930px )
+  .story__boxes
+    justify-content: space-around
+
+  .story__box
+    margin-bottom: 30px
+    flex-basis: 34%
+    &:nth-child(3)
+      margin-bottom: 0px
+    &:nth-child(4)
+      margin-bottom: 0px
+
+@media screen and ( max-width: 620px )
+  .story__boxes
+    justify-content: space-between
+
+  .story__box
+    flex-basis: 40%
+
+@media screen and ( max-width: 540px )
+  .sb__title
+    font-size: 22px
+    line-height: 23px
+
+  .chapter1-img
+    width: 80px !important
+
+  .sb__img__box
+    min-width: 140px
+    min-height: 130px
+    img
+      width: 60px
+
+@media screen and ( max-width: 412px )
+  .story__box
+    padding: 15px
+
+@media screen and ( max-width: 375px )
+  .story__box
+    border-radius: 10px
+
+  .chapter1-img
+    width: 55px !important
+
+  .sb__img__box
+    min-width: 115px
+    min-height: 102px
+    border-radius: 10px
+    img
+      width: 45px
+
+  .sb__chapter
+    font-size: 12px
+
+  .sb__title
+    font-size: 17px
+    line-height: 19px

@@ -1,0 +1,139 @@
+.footer
+  margin-top: 100px
+
+.footer__wrapper
+  display: flex
+  justify-content: space-between
+
+.footer__right
+  display: flex
+  flex-direction: column
+  flex-basis: 50%
+
+.footer__logo
+  margin-bottom: 40px
+  transition: transform .3s
+  width: 100px
+  &:hover
+    transform: scale(1.03)
+
+.footer__license
+  margin-top: auto
+  font-family: 'Mont-bold'
+  font-size: 14px
+  color: #00114E
+
+.footer__left
+  display: flex
+  align-items: end
+  flex-direction: column
+  flex-basis: 50%
+
+.footer__soc
+  margin-bottom: 50px
+  width: 100%
+  display: flex
+  justify-content: end
+
+.soc__link
+  margin-right: 45px
+  transition: transform .3s
+  &:last-child
+    margin-right: 0px
+  &:hover
+    transform: scale(1.1)
+
+.footer__nav
+  margin-bottom: 50px
+  width: 100%
+  display: flex
+  justify-content: end
+
+.fnav__item
+  margin-right: 40px
+  color: #00114E
+  font-family: 'Mont-bold'
+  font-size: 14px
+  &:last-child
+    margin-right: 0px
+
+.footer__contact
+  width: 100%
+  display: flex
+  justify-content: end
+  
+.fcontact__item
+  margin-right: 70px
+  color: #00114E
+  font-family: 'Mont-bold'
+  font-size: 14px
+  &:last-child
+    margin-right: 0px
+
+.line-hover
+  position: relative
+  &::before
+    content: ''
+    height: 1px
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: -2%
+    background-color: #000
+    transform: scaleX(0%)
+    transform-origin: left
+    transition: transform .3s
+  &:hover
+    &::before
+      transform: scaleX(100%)
+
+.footer__logo--mob
+  display: none
+
+.footer__license--mob
+  display: none
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 600px )
+  .footer__wrapper
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  .footer__right
+    display: none
+
+  .footer__logo--mob
+    display: block
+
+  .footer__license--mob
+    padding-bottom: 50px
+    display: block
+
+  .footer__soc
+    justify-content: center
+    align-items: center
+
+  .footer__nav
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+  .footer__contact
+    margin-bottom: 60px
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+  .fnav__item
+    margin-right: 0px
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0px
+
+  .fcontact__item
+    margin-right: 0px
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0px
+  

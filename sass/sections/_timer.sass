@@ -1,0 +1,106 @@
+.timer
+  margin-top: 100px
+  position: relative
+  height: 500px
+  overflow: hidden
+
+.timer__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.timer__title
+  margin-bottom: 30px
+  font-family: 'Druk'
+  font-size: 39px
+  color: #00114e
+
+.timer__box
+  margin-bottom: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 110px
+  font-family: 'Mont-bold'
+  text-transform: uppercase
+  color: #00418C
+
+.timer__button
+  padding: 20px 100px
+  font-size: 24px
+
+.timer__cloud
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1000px )
+  .timer__wrapper
+    top: 53%
+
+  .timer__cloud
+    width: 800px
+
+  .timer__title
+    font-size: 40px
+
+  .timer__box
+    font-size: 90px
+
+  .timer__button
+    padding: 15px 90px
+    font-size: 20px
+
+@media screen and ( max-width: 830px )
+  .timer
+    height: 330px
+
+  .timer__wrapper
+    top: 52%
+
+  .timer__cloud
+    width: 600px
+
+  .timer__title
+    font-size: 27px
+    margin-bottom: 10px
+
+  .timer__box
+    margin-bottom: 10px
+    font-size: 56px
+
+  .timer__button
+    padding: 10px 60px
+    font-size: 15px
+    border-radius: 10px
+
+@media screen and ( max-width: 630px )
+  .timer__cloud
+    width: 500px
+
+  .timer__wrapper
+    top: 53%
+
+@media screen and ( max-width: 515px )
+  .timer__cloud
+    width: 400px
+
+  .timer__title
+    font-size: 20px
+    margin-bottom: 10px
+
+  .timer__box
+    margin-bottom: 10px
+    font-size: 36px
+
+  .timer__button
+    padding: 5px 40px
+    font-size: 15px

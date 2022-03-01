@@ -1,0 +1,219 @@
+.about
+  margin-top: 100px
+
+.about__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.about__subtitle
+  margin-bottom: 50px
+
+.aslider__wrapper
+  position: relative
+
+.about__slider
+  position: relative
+
+.about__slide
+  display: flex !important
+  justify-content: space-between
+  align-items: start
+
+.aslide__img
+  margin-right: 80px
+  // padding: 20px 20px
+  background: #265adc
+  border-radius: 15px
+  img
+    width: 350px
+
+.aslide__info
+  display: flex
+  justify-content: start
+  align-items: start
+  flex-direction: column
+
+.aslide__title
+  margin-bottom: 15px
+  font-family: 'Mont-bold'
+  font-size: 48px
+  color: #00114e
+
+.aslide__subtitle
+  margin-bottom: 15px
+  color: #2453cb
+  font-size: 24px
+
+.aslide__text
+  width: 80%
+  color: #00114e
+  font-size: 18px
+  line-height: 27px
+
+.about__slider__button
+  padding: 10px 15px
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 11
+  position: absolute
+  top: 0
+  right: 0
+  background: linear-gradient(180deg, #0059C1 0%, #345BE6 106.44%)
+  border-radius: 10px
+
+.about__slider__button-prev
+  right: 50px
+
+.about__slider__thumb
+  position: absolute
+  right: -4px
+  bottom: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.aslide__thumb
+  margin-right: 50px
+  padding: 2px
+  position: relative
+  border-radius: 15px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, #0059C1 0%, #345BE6 106.44%)
+    border-radius: 15px
+    z-index: -1
+    transform: scaleY(0)
+    transform-origin: bottom
+    transition: transform 1s cubic-bezier(0,1,.17,1)
+  img
+    width: 75px
+
+.thumb--active
+  &::before
+    transform: scaleY(100%)
+
+/* ****************** Media ****************** */
+@media screen and ( max-width: 1250px )
+  .aslide__text
+    font-size: 16px
+    line-height: 23px
+
+  .aslide__thumb
+    margin-right: 25px
+
+  .about__slider__thumb
+    left: 425px
+    right: auto
+
+@media screen and ( max-width: 1200px )
+  .about__subtitle
+    text-align: center
+    width: 70%
+
+@media screen and ( max-width: 1080px )
+  .aslide__img
+    img
+      width: 275px
+
+  .aslide__title
+    margin-bottom: 10px
+    font-size: 30px
+
+  .aslide__subtitle
+    margin-bottom: 10px
+    font-size: 17px
+
+  .aslide__text
+    font-size: 15px
+    line-height: 18px
+
+  .about__slider__thumb
+    left: 353px
+
+  .aslide__thumb
+    margin-right: 10px
+    img
+      width: 55px
+
+@media screen and ( max-width: 975px )
+  .section__subtitle
+    font-size: 19px
+    line-height: 22px
+
+@media screen and ( max-width: 845px )
+  .aslide__img
+    margin-right: 25px
+
+  .about__slider__thumb
+    left: 300px
+
+@media screen and ( max-width: 780px )
+  .about__slider__thumb
+    display: none
+
+  .about__slide
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  .aslide__img
+    margin: 0 auto
+    margin-bottom: 30px
+
+  .aslide__title
+    margin: 0 auto
+    margin-bottom: 20px
+    text-align: center
+
+  .aslide__subtitle
+    margin: 0 auto
+    margin-bottom: 20px
+    text-align: center
+
+  .aslide__text
+    margin: 0 auto
+    text-align: center
+
+  .about__slider__button
+    top: 27%
+
+  .about__slider__button-prev
+    left: 0px
+    right: auto
+
+  .about__slider__button-next
+    left: auto
+    right: 0px
+
+@media screen and ( max-width: 470px )
+  .about__subtitle
+    margin-bottom: 25px
+
+@media screen and ( max-width: 410px )
+  .about__slider__button
+    top: 18%
+
+  .aslide__img
+    margin-bottom: 15px
+    img
+      width: 200px
+
+  .aslide__title
+    margin-bottom: 15px
+    font-size: 24px
+
+  .aslide__subtitle
+    margin-bottom: 15px
+    font-size: 15px
+
+  .aslide__text
+    font-size: 13px
+    line-height: 16px
