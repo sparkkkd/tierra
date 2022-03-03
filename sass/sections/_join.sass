@@ -1,5 +1,7 @@
 .join
   margin-top: 150px
+  position: relative
+  overflow: visible
 
 .join__wrapper
   padding: 85px 0px
@@ -34,7 +36,7 @@
   color: #bae2ff
   img
     margin-right: 25px
-  
+
 /* ****************** Media ****************** */
 @media screen and ( max-width: 1100px )
   .join__wrapper
@@ -48,14 +50,14 @@
 
   .join__button
     padding: 15px 55px
-    font-size: 20px 
+    font-size: 20px
 
 @media screen and ( max-width: 650px )
   .join__title
     font-size: 30px
 
   .join__text
-    font-size: 19px  
+    font-size: 19px
     line-height: 24px
 
 @media screen and ( max-width: 600px )
@@ -72,11 +74,16 @@
 
   .join__button
     padding: 10px 45px
-    font-size: 16px 
+    font-size: 16px
 
 @media screen and ( max-width: 560px )
- .join__text
-    font-size: 16px  
+  .join
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .join__text
+    font-size: 16px
     line-height: 20px
 
 @media screen and ( max-width: 470px )
@@ -92,7 +99,7 @@
 
   .join__text
     font-size: 13px
-    line-height: 15px  
+    line-height: 15px
 
   .join__button
     font-size: 13px
@@ -101,4 +108,4 @@
 
 @media screen and ( max-width: 350px )
   .join__title
-    font-size: 19px      
+    font-size: 19px
