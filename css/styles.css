@@ -1052,7 +1052,7 @@ button {
   margin-bottom: 50px;
   text-align: center;
   color: #00114e;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 36px;
 }
 
@@ -1732,7 +1732,7 @@ button {
   margin-bottom: 60px;
   text-align: center;
   color: #00114E;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 36px;
 }
 
@@ -3179,6 +3179,12 @@ button {
 .story__clouds {
   position: absolute;
   z-index: -1;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .story__cloud-1 {
@@ -3189,16 +3195,15 @@ button {
 .story__cloud-2 {
   top: 31%;
   left: -4%;
-}
-
-.story__cloud-3 {
-  bottom: 2%;
-  right: -2%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .story__cloud-3 {
   bottom: 1%;
   right: -5%;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 /* ****************** Story cosmetic media ****************** */
@@ -3300,6 +3305,12 @@ button {
   right: -2%;
   bottom: 0;
   z-index: -1;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 /* ****************** Timer cloud media ****************** */
@@ -3334,6 +3345,12 @@ button {
 .about__clouds {
   position: absolute;
   z-index: -1;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .about__cloud-1 {
@@ -3417,26 +3434,40 @@ button {
 .roadmap__clouds {
   position: absolute;
   z-index: -1;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .roadmap__cloud-1 {
   left: 52%;
   top: 32%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .roadmap__cloud-2 {
   left: 35%;
   top: 52%;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 .roadmap__cloud-3 {
   left: 52%;
   top: 76%;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
 }
 
 .roadmap__cloud-4 {
   left: 22%;
   top: 91%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /* ****************** Roadmap clouds media ****************** */
@@ -3550,11 +3581,19 @@ button {
 /* ****************** Join clouds ****************** */
 .join__clouds {
   position: absolute;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .join__cloud-1 {
   bottom: -9%;
   left: -3%;
+  -webkit-animation-duration: 2.6s;
+          animation-duration: 2.6s;
 }
 
 .join__cloud-2 {
@@ -3629,6 +3668,12 @@ button {
 .team__clouds {
   position: absolute;
   z-index: -1;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .team__cloud-1 {
@@ -3681,16 +3726,26 @@ button {
 .faq__clouds {
   position: absolute;
   z-index: -1;
+  -webkit-animation-name: cloudAnim;
+          animation-name: cloudAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .faq__cloud-1 {
   left: -3%;
   top: -14%;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 .faq__cloud-2 {
   right: -2%;
   top: -1%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .faq__cloud-3 {
@@ -3796,6 +3851,36 @@ button {
   .faq__cloud-2 {
     right: -6%;
     top: -16%;
+  }
+}
+
+@-webkit-keyframes cloudAnim {
+  0% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes cloudAnim {
+  0% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
