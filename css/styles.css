@@ -3190,20 +3190,22 @@ button {
 .story__cloud-1 {
   top: 2%;
   right: -5%;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .story__cloud-2 {
   top: 31%;
   left: -4%;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .story__cloud-3 {
   bottom: 1%;
   right: -5%;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /* ****************** Story cosmetic media ****************** */
@@ -3307,8 +3309,8 @@ button {
   z-index: -1;
   -webkit-animation-name: cloudAnim;
           animation-name: cloudAnim;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3356,11 +3358,15 @@ button {
 .about__cloud-1 {
   left: 11%;
   top: 29%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .about__cloud-2 {
   left: -2%;
   bottom: -32%;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 /* ****************** About clouds media ****************** */
@@ -3445,29 +3451,29 @@ button {
 .roadmap__cloud-1 {
   left: 52%;
   top: 32%;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .roadmap__cloud-2 {
   left: 35%;
   top: 52%;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .roadmap__cloud-3 {
   left: 52%;
   top: 76%;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 .roadmap__cloud-4 {
   left: 22%;
   top: 91%;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 /* ****************** Roadmap clouds media ****************** */
@@ -3592,13 +3598,15 @@ button {
 .join__cloud-1 {
   bottom: -9%;
   left: -3%;
-  -webkit-animation-duration: 2.6s;
-          animation-duration: 2.6s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .join__cloud-2 {
   top: -16%;
   right: -2%;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 /* ****************** Join clouds media ****************** */
@@ -3670,8 +3678,8 @@ button {
   z-index: -1;
   -webkit-animation-name: cloudAnim;
           animation-name: cloudAnim;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3737,21 +3745,23 @@ button {
 .faq__cloud-1 {
   left: -3%;
   top: -14%;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .faq__cloud-2 {
   right: -2%;
   top: -1%;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .faq__cloud-3 {
   left: 16%;
   bottom: 2%;
   width: 300px;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 /* ****************** FAQ clouds media ****************** */
