@@ -479,11 +479,11 @@ button {
 
 .intro__text {
   margin-bottom: 25px;
-  width: 75%;
+  width: 100%;
   font-family: 'Mont-bold';
   color: #00114e;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 27px;
 }
 
@@ -1052,7 +1052,7 @@ button {
   margin-bottom: 50px;
   text-align: center;
   color: #00114e;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 36px;
 }
 
