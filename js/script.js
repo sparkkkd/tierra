@@ -47,7 +47,7 @@ var rellax = new Rellax('.rellax');
 
 /* ************************** About slider ************************** */
 $('.about__slider').slick({
-  // speed: 1000,
+  swipe: false,
   waitForAnimate: false,
   prevArrow: `<button type="button" class="slider__arrow slider-prev about__slider__button about__slider__button-prev"><img src="images/white-arrow.svg" alt=""></button>`,
   nextArrow: `<button type="button"class="slider__arrow slider-next about__slider__button about__slider__button-next"><img src="images/white-arrow.svg" alt=""></button>`,
