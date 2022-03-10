@@ -89,6 +89,20 @@ button {
           transform: rotateZ(180deg);
 }
 
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00418c;
+}
+
 /* ****************** Media ****************** */
 @media screen and (max-width: 1250px) {
   .container {
