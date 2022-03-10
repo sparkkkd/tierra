@@ -128,8 +128,12 @@ const answer = document.querySelectorAll('tab-answer')
 let tabClicked = false
 
 
-tabButtons.forEach((btn) => {
-  btn.addEventListener('click', selectTab)
+// tabButtons.forEach((btn) => {
+//   btn.addEventListener('click', selectTab)
+// })
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', selectTab)
 })
 
 function selectTab() {
@@ -137,7 +141,7 @@ function selectTab() {
   const makeThisActive = !tab.classList.contains('faq__tab__answer--active')
 
   const activeTab = tabs[this.dataset.tab]
-  const makeTabActive = !tab.classList.contains('faq__tab--active')
+  const makeTabActive = !tabs[this.dataset.tab].classList.contains('faq__tab--active')
 
 
   tabButtons.forEach(button => {
@@ -152,9 +156,9 @@ function selectTab() {
     tab.classList.remove('faq__tab--active')
   })
 
-  this.classList.toggle('faq__tab__question-btn--active', makeThisActive)
-  tab.classList.toggle('faq__tab__answer--active', makeThisActive)
-  activeTab.classList.toggle('faq__tab--active', makeThisActive)
+  // this.classList.toggle('faq__tab__question-btn--active', makeThisActive)
+  // tab.classList.toggle('faq__tab__answer--active', makeThisActive)
+  activeTab.classList.toggle('faq__tab--active', makeTabActive)
 }
 
 /* ************************** Adaptive settings ************************** */
@@ -208,10 +212,10 @@ function adaptiveSettings() {
     `
   }
 
-  if (window.innerWidth <= 1141) {
+  if (window.innerWidth <= 1252) {
     aboutTitle.innerHTML = `
-      You can be part <br>
-      of the city
+      Enterprises <br>
+      to suit all tastes
     `
   }
 

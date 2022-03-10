@@ -81,6 +81,7 @@ button {
   background: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .slider-next {
@@ -470,7 +471,7 @@ button {
 }
 
 .intro__title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   font-family: 'Druk';
   font-size: 64px;
   color: #00114e;
@@ -478,12 +479,12 @@ button {
 }
 
 .intro__text {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   width: 100%;
-  font-family: 'Mont-bold';
+  font-family: 'Mont';
   color: #00114e;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 27px;
 }
 
@@ -1527,6 +1528,7 @@ button {
   padding: 2px;
   position: relative;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .aslide__thumb::before {
@@ -1781,7 +1783,7 @@ button {
   position: relative;
   font-family: 'Mont';
   color: #00114e;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .rbox__text:last-child {
@@ -1807,7 +1809,7 @@ button {
 
 .roadmap__img {
   position: absolute;
-  width: 560px;
+  width: 430px;
   left: 50%;
   top: 54%;
   -webkit-transform: translate(-50%, -50%);
@@ -1821,7 +1823,7 @@ button {
 /* ****************** Media ****************** */
 @media screen and (max-width: 1250px) {
   .roadmap__img {
-    width: 460px;
+    width: 420px;
   }
   .rbox__title {
     font-size: 36px;
@@ -1834,6 +1836,7 @@ button {
 @media screen and (max-width: 1000px) {
   .roadmap__img {
     width: 420px;
+    top: 56%;
   }
   .rbox__title {
     font-size: 30px;
@@ -1984,7 +1987,7 @@ button {
 }
 
 .join__wrapper {
-  padding: 85px 0px;
+  padding: 35px 0px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2004,17 +2007,17 @@ button {
 }
 
 .join__title {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: 'Druk';
   font-size: 48px;
   color: #00114e;
 }
 
 .join__text {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   width: 60%;
   text-align: center;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 36px;
   color: #00114e;
 }
@@ -2039,6 +2042,12 @@ button {
 }
 
 /* ****************** Media ****************** */
+@media screen and (max-width: 1250px) {
+  .join__text {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .join__wrapper {
     padding: 50px 0px;
@@ -2052,6 +2061,12 @@ button {
   .join__button {
     padding: 15px 55px;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .join__text {
+    width: 80%;
   }
 }
 
@@ -2404,6 +2419,7 @@ button {
           transform: all .3s;
   -webkit-transition: all .7s;
   transition: all .7s;
+  cursor: pointer;
 }
 
 .faq__tab:last-child {
@@ -2420,6 +2436,15 @@ button {
 
 .faq__tab--active .faq__tab__question .arrow-path {
   fill: #fff;
+}
+
+.faq__tab--active .faq__tab__question .faq__tab__question-btn {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.faq__tab--active .faq__tab__answer {
+  max-height: 200px;
 }
 
 .faq__tab__question {
@@ -3642,6 +3667,12 @@ button {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .join__cloud-2 {
+    top: -26%;
+  }
+}
+
 @media screen and (max-width: 670px) {
   .join__clouds {
     width: 140px;
@@ -3669,6 +3700,12 @@ button {
   .join__cloud-2 {
     top: -17%;
     right: -5%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .join__cloud-2 {
+    top: -23%;
   }
 }
 
