@@ -243,3 +243,19 @@ function linksScroll() {
   })
 
 }
+
+/* ************************** AOS hover fix ************************** */
+aosHover()
+
+function aosHover() {
+  const aosLink = document.querySelectorAll('.aos-hover')
+  console.log(aosLink);
+  aosLink.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      item.style.transform = 'scale(1.05)'
+    })
+    item.addEventListener('mouseleave', () => {
+      item.style.transform = 'scale(1)'
+    })
+  })
+}
