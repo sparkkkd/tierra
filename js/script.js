@@ -170,10 +170,11 @@ function adaptiveSettings() {
   const storyTitle = document.querySelector('.story__title')
   const aboutTitle = document.querySelector('.about__title')
 
-  if (window.innerWidth < 731) {
+  if (window.innerWidth <= 1060) {
     introTitle.innerHTML = `
-      The city <br>
-      of the future
+      THE ONLY WAY <br>
+      YOU CAN PREDICT <br>
+      THE FUTURE IS TO BUILD IT
     `
   }
 
