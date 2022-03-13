@@ -14,6 +14,9 @@ body {
   background: #9cddff;
   font-family: 'Mont';
   color: #fff;
+}
+
+.mwrapper {
   overflow-x: hidden;
   position: relative;
 }
